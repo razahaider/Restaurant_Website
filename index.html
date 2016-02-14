@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>El Restaurante</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+
+		<link rel="stylesheet" href="css/style.css">
+  		<link rel="stylesheet" href="css/animate.css">
+		 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600italic' rel='stylesheet' type='text/css'> 
+
+	</head>
+
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script> 
+    $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+		<section id="banner">
+			<div class="wrapper">
+				<header>
+					<p id="logo" >El Restaurante</p>
+					<nav>
+						<a href="index.html">Home</a>
+						<a href="#services">Our Menu</a>
+						<a href="#Portfolio_work">Gallery</a>
+						<a href="#contact_us" class="button_small contact_button" >Place Order</a>
+					</nav>
+				</header>
+
+				<div class="content">
+					<h1 class="title animated fadeIn">El Restaurante</h1>
+					<h3 class="sub-title animated bounceInLeft">A place so fine to dine...with your friends and family every time...</h3>
+					<div class="button_wrapper">
+						<a href="#" class="button button_highlight">Book a Reservation</a>
+					</div>
+				</div>	
+			</div>
+		</section>
+
+		<section id="services" class="cf">
+			<div class="wrapper">
+				<div class="service">
+					<h3>Italian Cuisine</h3>
+					<img src="img/itc.jpg">
+					<p>Normcore scenester health goth thundercats, gentrify flexitarian squid authentic four dollar toast letterpress intelligentsia banjoleggings raw denim, pug swag narwhal kombucha.</p>
+					<div class="button_wrapper">
+						<a href="#" class="button button_highlight button_small">Read More</a>
+					</div>
+				</div>
+
+				<div class="service">
+					<h3>Chinese Cuisine</h3>
+					<img src="img/inc.jpg">
+					<p>Tacos selvage master cleanse, meh 3 wolf moon shoreditch meditation blue bottle. Direct trade bespoke authentic leggings raw denim, pug swag narwhal kombucha forage keffiyeh austin.</p>
+					<div class="button_wrapper">
+						<a href="#" class="button button_highlight button_small">Read More</a>
+					</div>
+				</div>
+				
+				<div class="service">
+					<h3>Indian Cuisine</h3>
+					<img src="img/chc.jpg">
+					<p>Tacos selvage master cleanse, meh 3 wolf moon shoreditch meditation blue bottle. Direct trade bespoke authentic leggings raw denim, pug swag narwhal kombucha forage keffiyeh austin.</p>
+					<div class="button_wrapper">
+						<a href="#" class="button button_highlight button_small">Read More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="Portfolio_work">
+			<div class="wrapper">
+				<h2 class="title">Our Gallery</h2>
+				
+				<ul id="slide">
+					<li><img src="img/blackwh.jpg"></li>
+					<li><img src="img/fashion.jpg"></li>
+					<li><img src="img/wedding.jpg"></li>
+				</ul>
+		</section>
+		<section id="contact_us">
+			<div class="wrapper">
+				<h2 class="title">Connect with Us</h2>
+				<p class=" contact-sub">Feel free to Contact us</p>
+				<div class="container">
+	   			<div class="contact">
+					<form class="form">
+					<p class="name">
+						<input type="text" name="name" id="name" placeholder="John Doe" />
+						<label for="name">Name</label>
+					</p>
+					
+					<p class="email">
+						<input type="text" name="email" id="email" placeholder="mail@example.com" />
+						<label for="email">Email</label>
+					</p>		
+				
+					<p class="text">
+						<textarea name="text" placeholder="Write something to us" /></textarea>
+					</p>
+					
+					<p class="submit">
+						<input type="submit" value="Send" />
+					</p>
+					</form>
+				</div>
+			</div>
+			</div>
+		</section>
+		<footer>
+			<p class="copyright">&copy; 2015 <a href="#">Haider Raza</a>/ Photography Website</p>
+		</footer>
+	</body>
+</html>
